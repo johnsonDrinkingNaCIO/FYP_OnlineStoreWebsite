@@ -1,0 +1,28 @@
+.nav{
+    background-color: rgb(16, 90, 38);
+    display: flex;
+    justify-content: space-between;
+    padding: 1px;
+}
+
+.Title-font
+{
+    font-size: 2rem;
+}
+.nav ul
+{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav li{
+    display: inline; 
+    padding-right: 10px;
+    
+    
+}
+
+.nav li:hover{
+    background-color: rgb(36, 81, 120);
+}

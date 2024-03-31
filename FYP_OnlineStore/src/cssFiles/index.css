@@ -1,0 +1,16 @@
+.backdrop{
+    background: #4bcbe2e1;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal{
+    width: 300px;
+    height: 500px;
+}
