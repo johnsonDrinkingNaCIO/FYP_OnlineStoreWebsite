@@ -1,10 +1,19 @@
-.nav{
+.nav {
+    flex-grow: 0.1;
     background-color: rgb(16, 90, 38);
     display: flex;
     justify-content: space-between;
-    padding: 1px;
-}
 
+    padding: 1rem; /* You had it as 1px, but typically padding is more than 1px */
+    
+    position: relative; /* Use 'fixed' if you want the nav to stay at the top when scrolling */
+    top: 0px; /* Add 'px' to denote pixels */
+    left: 0;
+    right: 0;
+    height: 30px; /* Set your desired height */
+    
+    /* Additional styles if needed */
+  }
 .Title-font
 {
     font-size: 2rem;

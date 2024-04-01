@@ -10,7 +10,7 @@ function Navbar()
     ]
 
     return (
-        <div>
+       
         <nav className='nav'>
             <ul>
                 <li className='Title-font'>Quick-Buy</li>               
@@ -21,7 +21,7 @@ function Navbar()
             ))}
            </ul>
         </nav>
-        </div>
+        
     );
 }
 export default Navbar;

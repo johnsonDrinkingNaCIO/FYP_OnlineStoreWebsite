@@ -6,10 +6,9 @@ function Footer()
 
     return (
         <div>
-        <nav className='nav'>
+        <nav className='Footer'>
             <ul>
-                <li className='Edge of the World'>Title</li>
-                
+                <li className='Edge of the World'>Title</li>               
             </ul>
           
         </nav>

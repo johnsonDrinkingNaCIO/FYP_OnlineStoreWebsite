@@ -35,10 +35,10 @@ function Login() {
    <div className='bordered-div'>
     <h1>Login Page</h1>
     <form>
-     UserName: <input type='text' placeholder=''></input>
+     UserName: <input type='text' className='box' placeholder=''></input>
       <br></br>
      PassWord: <input type={isPasswordVisible?'text':'password'} placeholder=''></input>
-     <button type='button' onClick={togglePasswordVisibility}>X</button>
+     <button className='shiny-button' type='button' onClick={togglePasswordVisibility}>X</button>
      <br></br>
      <input type='submit'></input>  <a href='#'>NewUser?</a>
     </form>
@@ -49,8 +49,5 @@ function Login() {
     </>
   )
 }
-function hi()
-{
-  console.log("hi");
-}
+
 export default Login

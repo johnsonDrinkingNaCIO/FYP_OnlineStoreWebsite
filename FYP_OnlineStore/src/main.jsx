@@ -9,11 +9,12 @@ import {
   Link,
 } from "react-router-dom";
 
-import './index.css'
 import { ErrorPage } from './Pages/ErrorPage.jsx';
 import { MainPage } from './Pages/MainPage.jsx';
 import { BatchBuy } from './Pages/BatchBuy.jsx';
 import { CartPage } from './Pages/CartPage.jsx';
+import { StorePage } from './Pages/StorePage.jsx';
+
 
 const router = createBrowserRouter(
 [
@@ -34,6 +35,10 @@ const router = createBrowserRouter(
     {
       path:"/MainPage/Cart",
       element:<CartPage/>,
+    },  
+    {
+      path:"/MainPage/Store",
+      element:<StorePage/>,
     },
     
   ]

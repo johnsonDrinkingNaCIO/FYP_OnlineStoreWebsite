@@ -1,0 +1,9 @@
+.Footer {
+    background-color: rgb(16, 90, 38);
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  right: 0;
+  display: flex;
+  /* Additional styling such as alignment, padding, etc. */
+}
