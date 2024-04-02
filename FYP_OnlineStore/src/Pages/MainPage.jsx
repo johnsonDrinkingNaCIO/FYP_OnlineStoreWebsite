@@ -7,17 +7,20 @@ export const MainPage=() =>
 {
     return(
        <>
+       <div className="flexbox">
         <Navbar/>
-        <div className='main-content-parent'>
+        <div className='main-content-parent'>    
+        <Outlet/>
+
         <div className="SideBar">
             <h1>MainPage</h1>
             <h1>MainPage</h1>
             <h1>MainPage</h1>
         </div>
         
-        <Outlet/>
         </div>
         <Footer/>
+        </div>
        </>
     )
 };

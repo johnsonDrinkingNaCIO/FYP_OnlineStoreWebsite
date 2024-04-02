@@ -1,5 +1,5 @@
 import '../cssFiles/index.css'
-
+import '../index.css';
 export const StorePage=() =>
 {
     const NumberOfItems=10;
