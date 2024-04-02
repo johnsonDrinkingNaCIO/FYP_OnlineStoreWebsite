@@ -1,2 +1,0 @@
-# FYP_OnlineStoreWebsite
-FYP_OnlineStoreWebsite
