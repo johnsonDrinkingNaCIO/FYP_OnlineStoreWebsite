@@ -17,7 +17,7 @@ function Navbar()
                 <li className='Title-font'>Quick-Buy</li>               
             </ul>
            <ul>
-       https://poe.com/chat/253kcdjrs7m9zowo48e#     {sitePages.map((page,index)=>(
+         {sitePages.map((page,index)=>(
                  <li key={page.name}><NavLink to={page.path}>{page.name}</NavLink></li> 
             ))}
             <li className='userIcon'>
