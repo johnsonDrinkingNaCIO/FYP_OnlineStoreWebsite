@@ -15,7 +15,7 @@ import { BatchBuy } from './Pages/BatchBuy.jsx';
 import { CartPage } from './Pages/CartPage.jsx';
 import { StorePage } from './Pages/StorePage.jsx';
 
-
+import data from './loaders/data.jsx';
 const router = createBrowserRouter(
 [
   {path:"/",
@@ -31,6 +31,7 @@ const router = createBrowserRouter(
     {
       path:"/MainPage/BatchBuy",
       element:<BatchBuy/>,
+      loader:data,
     },
     {
       path:"/MainPage/Cart",

@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 function Navbar()
 {
     const sitePages=[
+        { name: "Exit", path: "/"},
         { name: "Store", path: "/MainPage/Store" },
         { name: "Cart", path: "/MainPage/Cart" },
         {name:"Exit",path:"/MainPage/Exit"},

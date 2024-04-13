@@ -2,12 +2,7 @@
 :root {
   --nightmode: blue;
  
-  margin: 0 ;
-  padding: 0;
-
-  display: flex;
-  flex-direction: column;
- 
+  
 }
 
 
@@ -17,42 +12,61 @@
 }
 
 
-body { 
-  
-  place-items: center;
-  
+body{
+ 
+ 
+  overflow-y: hidden;
+  background-color: var(--nightmode); 
+  background:linear-gradient( rgba(6, 6, 6, 0.8),rgba(2, 2, 2, 0.8));
+  font-family: 'Roboto', sans-serif;
+  color: aliceblue;
+ align-items: center ;
+ margin: 0;
 }
 
+
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 2.2em;
+ 
 }
 
 .flexbox{
+  box-sizing: border-box;
+  border: 10px solid black;
+
   display: flex;
   flex-direction: column;
+ 
   width: 100vw;
+  height: 100vh;
+
+
+  transition: height 0.3s ease;
+}
+
+.flexbox:hover{
   height: 100vh;
 }
 
+
 /* This styles the scrollbar track */
 ::-webkit-scrollbar {
-  width: 12px; /* width of the entire scrollbar */
+  width: 6px; /* width of the entire scrollbar */
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; /* color of the tracking area */
+  background: #baeb08; /* color of the tracking area */
 }
 
 /* This styles the scrollbar thumb (the draggable element) */
 ::-webkit-scrollbar-thumb {
-  background: #888; /* color of the scroll thumb */
+  background: #da0f78; /* color of the scroll thumb */
   border-radius: 6px; /* roundness of the scroll thumb */
 }
 
 /* This styles the scrollbar thumb on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; /* color of the scroll thumb when hovered or active */
+  background: #361bcd; /* color of the scroll thumb when hovered or active */
 }
 
 
