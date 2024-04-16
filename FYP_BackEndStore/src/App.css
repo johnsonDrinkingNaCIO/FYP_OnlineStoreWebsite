@@ -69,6 +69,14 @@
   width: calc(100vw - var(--paddingWidth)*2);
 }
 
+.squarePadding{
+  --paddingWidth: 35px;
+  
+  padding: var(--paddingWidth);
+  padding-top:calc(var(--paddingWidth) + 50px);
+  width: calc(100vw - var(--paddingWidth)*2);
+}
+
 /* Unique styles for bgImage */
 .bgImage {
   position: absolute;
@@ -92,7 +100,7 @@ h1 {
 .wrapper{
   
   height: 100vh;
-  width: calc(300vw);
+  width: calc(100vw );
   overflow-y: auto;
   overflow-x: hidden;
   
@@ -100,7 +108,11 @@ h1 {
   position:relative;
   left:0%;
   transition: all 0.5s;
+
+  border: 10px;
 }
+
+
 
 .sticky-element {
   
@@ -207,10 +219,34 @@ h1 {
   background: #e0e5ec;
   border-radius: 20px;
   box-shadow: -2px -2px 15px #ffffff,
-              8px 8px 15px rgba(174, 174, 192, 0.4);
+              8px 8px 15px rgba(133, 133, 140, 0.4);
   padding: 2em;
   max-width: 500px;
   margin: auto;
   color: rgb(0, 0, 0);
 
+}
+
+/* Targets the scrollbar track (part the thumb slides within) */
+::-webkit-scrollbar {
+  width: 8px;  /* For vertical scrollbars */
+  height: 8px; /* For horizontal scrollbars */
+}
+
+/* Targets the draggable part of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;      /* Color of the thumb */
+  border-radius: 10px;             /* Rounded corners of the thumb */
+  border: 2px solid transparent;   /* Optional: Adds a border inside the track */
+}
+
+/* Targets the track of the scrollbar */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;             /* Color of the track */
+  border-radius: 10px;             /* Rounded corners of the track */
+}
+
+/* Optionally, style the scrollbar corner (where horizontal and vertical scrollbars meet) */
+::-webkit-scrollbar-corner {
+  background: #f1f1f1;
 }

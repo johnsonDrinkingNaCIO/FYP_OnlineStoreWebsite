@@ -1,13 +1,12 @@
+import './BulkBuy.css';
+import './GeneralPage.css';
+export default function BulkBuy() {
 
-
-export default function BulkBuy()
-{
-
-    return(
+    return (
         <>
-        <div>
-            Bulk
-        </div>
+            <div className=''>
+                BulkBuy
+            </div>
         </>
     )
 }

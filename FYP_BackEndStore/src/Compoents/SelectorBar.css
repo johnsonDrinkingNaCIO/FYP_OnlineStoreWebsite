@@ -1,6 +1,6 @@
 .glowyText {
     color: #fff; /* Choose a color for the text */
-    text-shadow: 0 5px 10px rgba(255, 255, 255, 0.7); /* Horizontal offset, vertical offset, blur radius, color */
+    text-shadow: 0 5px 5px rgba(255, 255, 255, 0.7); /* Horizontal offset, vertical offset, blur radius, color */
   }
 
 .Funnyword{
@@ -12,6 +12,46 @@
     text-rendering: optimizeSpeed;
 }
 
+.leftDiv
+{
+  flex:1;
+  
+}
+
+.rightDiv
+{ 
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  
+  flex:1;
+}
+.rightDivDown
+{
+  flex:1;
+
+  position: relative;
+  bottom:0%;
+  display: flex;
+  width: 100%;
+}
+.rightDivDown > input
+{
+ font-size: large;
+ flex:10;
+ background-color: aliceblue;
+ color: #3d3d3d;
+}
+.rightDivDown > button
+{
+  flex:1;
+}
+
+.tags
+{
+  flex:10;
+}
 
 
 .BigCircle {
@@ -35,7 +75,7 @@
 
     /* Spacing and transition */
     padding: var(--pad);
-    margin: 20px;
+    margin: 10px;
     transition: all 0.3s ease-in-out; /* Specify the duration for the transition */
   }
 .BigCircle:hover {
@@ -150,14 +190,40 @@
 {
     --visible:1;
     opacity: var(--visible);
+   
     transition: all 0.3s ease-in-out;
 }
 
 .SelectorBarDiv
 {
- 
-  position: relative;
-  transform: translate(0px, -200px) scale(1,1);
+  
 
-  transition: all 1.3s ease-in-out;
+  background-color: #3d3d3d;
+  opacity: 0.9;
+
+  border:1.5px solid;
+  position: absolute;
+  top:0%;
+  left: 50%;
+
+  width: 100%;
+
+  transform: translate( -50% , 0%) scale(1,1);
+
+  transition: all 0.8s ease-in-out;
+  z-index: 1;
 }
+
+.SelectorBarToggle
+{
+  border:1.5px solid;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+.NavPart
+{
+  display: flex;
+}
+

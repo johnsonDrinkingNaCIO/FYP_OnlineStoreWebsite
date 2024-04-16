@@ -1,8 +1,11 @@
-import SelectorBar from './Compoents/SelectorBar';
+import SelectorBar from "./Compoents/SelectorBar.jsx";
 
 import { Outlet } from "react-router-dom"
 import axios, {isCancel, AxiosError} from 'axios';
 import { useEffect, useState } from "react";
+
+import './App.css'
+
 export default function MainArea ()
 {
     const [data, setData] = useState(null); 
@@ -38,9 +41,12 @@ export default function MainArea ()
 
 
     return(
-      <>
-      <SelectorBar/>
-        <Outlet></Outlet>
+      <> 
+      <div className="wrapper squarePadding">
+      <Outlet></Outlet>
+      <div className="bgImage"></div>
+    
+      </div>
       </>
 
     )

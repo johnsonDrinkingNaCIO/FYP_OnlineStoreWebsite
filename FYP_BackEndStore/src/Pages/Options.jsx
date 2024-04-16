@@ -1,3 +1,5 @@
+import './Options.css';
+import './GeneralPage.css';
 export default function Options()
 {
 

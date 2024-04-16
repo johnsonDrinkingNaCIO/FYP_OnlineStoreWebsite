@@ -1,0 +1,95 @@
+.flex
+{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.flex-item {
+    flex: 1; /* Don't grow, don't shrink, and base size on content size */
+}
+
+.VerticalCard
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border: 5px solid;
+    border-radius: 10px;
+    margin: 10px;
+    background: radial-gradient(rgb(227, 227, 227),#111);
+
+    box-shadow: 5px 5px  rgb(172, 212, 109) ;
+
+   
+    
+    width: 280px;
+    height: 350px;
+    
+    transition: all 0.1s ease;
+    z-index: 0;
+}
+.VerticalCardLeftInfo
+{
+    position: relative;
+    width: 280px;
+   
+}
+
+.FullInfoDiv
+{
+    width: 0px;
+    position: relative;
+
+    overflow: hidden;
+    display: flex;
+    transition: all 0.1s ease;
+}
+.VerticalCardFullInfo
+{
+   
+    overflow-y: auto;
+    
+    transition: all 0.3s ease;
+}
+.cardBox
+{
+   height: 50%;
+   overflow: hidden;
+    border: 1px solid red;
+}
+.cardBox > img
+{
+    position: relative;
+    
+    transform: scale(2,2);
+    object-fit: cover;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+
+
+.ShowMoreBtn
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.AddToCartBtn
+{
+    padding: 15px;
+}
+
+.display{
+    width: 100%;
+    font-size: 20px;
+}
+
+.debug
+{
+    border: 2px solid red;
+}

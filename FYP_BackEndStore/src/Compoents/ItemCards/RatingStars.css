@@ -1,0 +1,14 @@
+.star
+{
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 50px solid rgb(252, 176, 13);
+    margin-left: 15px;
+}
+.starBox
+{
+    display: flex;
+    flex-direction: row;
+}
