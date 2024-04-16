@@ -5,8 +5,16 @@ export default function Options()
 
     return(
         <>
-        <div>
-            Options
+        <div className='flex OptionBG'>
+            <div className='padding flexItem'>UserName:
+                <input></input>
+            </div>
+            <div className='padding flexItem'>UserName:
+                <input></input>
+            </div>
+            <div className='padding flexItem'>UserName:
+                <input></input>
+            </div>
         </div>
         </>
     )
