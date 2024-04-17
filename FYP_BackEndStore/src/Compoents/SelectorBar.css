@@ -46,6 +46,7 @@
 .rightDivDown > button
 {
   flex:1;
+  padding: 1px ;
 }
 
 .tags

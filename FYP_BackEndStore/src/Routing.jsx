@@ -6,8 +6,9 @@ import MainArea from "./MainArea.jsx"
 
 import BulkBuy from "./Pages/BulkBuy.jsx";
 import Store from "./Pages/Store.jsx";
-import Options from "./Pages/Options.jsx";
+import Options from "./Pages/OptionsPage/Options.jsx";
 import SelectorBar from "./Compoents/SelectorBar.jsx";
+import CartPage from "./Pages/CartPage.jsx";
 
 export default function Routing()
 { const location = useLocation();
@@ -25,6 +26,7 @@ export default function Routing()
                     <Route path="BulkBuy" element={<BulkBuy />} />
                     <Route path="Store" element={<Store />} />
                     <Route path="Options" element={<Options />} />
+                    <Route path="Cart" element={<CartPage />} />
                 </Route>
         </Routes>
         </AnimatePresence>

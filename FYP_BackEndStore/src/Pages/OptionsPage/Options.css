@@ -1,0 +1,62 @@
+.OptionBG
+{
+    background-color: rgb(88, 88, 88);
+    height: 100vh;
+}
+.OptionBGWhite
+{
+    background-color: rgb(174, 174, 174);
+}
+
+.UserData > div
+{
+   
+}
+.flex
+{
+    display: flex;
+  
+}
+
+.flexLeft
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.flexItem
+{
+    flex:3;
+}
+
+.flexItemSmall
+{
+    flex:1;
+}
+
+.centerChild
+{
+   
+    align-items: center;
+}
+
+.leftChild
+{
+    text-align: left;
+}
+
+.padding
+{
+    padding: 50px;
+}
+
+.divPfp
+{
+    --rad:150px;
+    width: var(--rad);
+    height: var(--rad);
+    border-radius: 50%;
+    background-color: aliceblue;
+    margin: 15px;
+}

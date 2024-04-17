@@ -1,0 +1,60 @@
+.CartCard
+{
+    overflow: hidden;
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 350px;
+    width: 280px;
+    background-color: gray;
+    z-index: 0;
+   
+    border-radius: 15px;       /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Simple shadow */
+}
+
+.Scrollable
+{
+    border: 3px solid white;
+    overflow: auto;
+    height: 500px;
+}
+
+.CheckOutDiv
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.CheckOutDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.checkout-container {
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    width: 100%; /* Adjust the width as needed */
+    border-radius: 3px;
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+    border-left: 0px solid white; /* This can be omitted as it's 0 width */
+    border-right: 0px solid white; /* This can be omitted as it's 0 width */
+    /* border-color: white; This line can be omitted as color is included in border declarations */
+  }
+  
+  .checkout-label {
+    text-align: left;
+  }
+  
+  .checkout-value {
+    text-align: right;
+  }
+
+  .BigTotal
+  {
+    font-size: 50px;
+  }

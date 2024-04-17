@@ -7,6 +7,27 @@
 
 }
 
+.storeCard
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border: 5px solid;
+    border-radius: 10px;
+    margin: 10px;
+    background: radial-gradient(rgb(153, 153, 153),#5e5e5e);
+
+    box-shadow: 5px 5px  rgb(172, 212, 109) ;
+
+   
+    
+    width: 280px;
+    height: 350px;
+    
+    transition: all 0.1s ease;
+    z-index: 0;
+}
+
 .flex
 {
  display: flex;

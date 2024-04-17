@@ -1,8 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
-import { useNavigate, NavLink } from "react-router-dom";
+import { useNavigate, NavLink,useLocation } from "react-router-dom";
 import './SelectorBar.css';
 
 function SelectorBar() {
+  const loc = useLocation();
   const nav = useNavigate();
   const [active, setActive] = useState(true);
   const BarParentRef = useRef(null);
@@ -69,10 +70,11 @@ function SelectorBar() {
         <div className="rightDiv">
           <div className="tags">tags</div>
           <div className="rightDivDown">
+            <div className="rightDivDown">
             <input placeholder="Search in this page...."></input>
             <button>SearchPage</button>
-
-            <button>
+            </div>
+            <button onClick={()=>handleNavClick("/MainArea/Cart")}>
               Cart🛒
             </button>
 
@@ -80,7 +82,7 @@ function SelectorBar() {
               🌛NightMode
             </button>
 
-            <button>
+            <button >
               LogOut
             </button>
 
